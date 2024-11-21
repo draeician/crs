@@ -9,6 +9,11 @@
 - CLI interface with command handlers
 - Project configuration and build system setup
 - Requirements file with core and development dependencies
+- Comprehensive documentation of storage format and locations
 
 ### Fixed
 - CLI implementation to handle commands directly instead of using subcommands
+
+### Changed
+- Updated project specification to match implementation details
+- Clarified storage location and format in documentation
