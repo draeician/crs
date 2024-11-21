@@ -1,15 +1,17 @@
 # Changelog
 
+## [0.2.0] - 2024-03-19
+### Changed
+- Renamed project from qa_thoughts to crs (Can't Remember Shit)
+- Updated documentation to reflect new project name
+- Added humorous explanation of CRS in README
+
 ## [0.1.0] - 2024-03-19
 ### Added
-- Initial project structure
-- Core models for Question, Answer, and Thought entries
-- Storage utility for saving entries to CSV files
-- String formatting and escaping utilities
-- CLI interface with command handlers
-- Project configuration and build system setup
-- Requirements file with core and development dependencies
-- Comprehensive documentation of storage format and locations
+- Initial release
+- Basic functionality for recording questions, answers, and thoughts
+- CSV storage with UUID tracking
+- Command line interface
 
 ### Fixed
 - CLI implementation to handle commands directly instead of using subcommands

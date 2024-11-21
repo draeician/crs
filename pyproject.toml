@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "qa_thoughts"
+name = "crs_thoughts"
 version = "0.1.0"
 description = "CLI tools for recording questions, answers, and thoughts"
 requires-python = ">=3.8"
@@ -13,33 +13,45 @@ authors = [
 dependencies = [
     "python-dateutil>=2.8.2",
     "typing-extensions>=4.5.0",
+    "pyyaml>=6.0.1",
+    "structlog>=24.1.0",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=7.4.0",
     "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
     "ruff>=0.1.9",
     "black>=23.12.0",
     "mypy>=1.8.0",
     "build>=1.0.3",
+    "pre-commit>=3.5.0",
+    "sphinx>=7.2.0",
 ]
 
 [project.scripts]
-question = "qa_thoughts.cli:question_main"
-answer = "qa_thoughts.cli:answer_main"
-thought = "qa_thoughts.cli:thought_main"
+question = "crs_thoughts.cli:question_main"
+answer = "crs_thoughts.cli:answer_main"
+thought = "crs_thoughts.cli:thought_main"
 
 [tool.ruff]
 line-length = 100
-select = ["E", "F", "B", "I"]
+select = ["E", "F", "B", "I", "N", "D", "UP", "S", "BLE", "FBT", "C4", "T20", "PT", "RET", "SIM"]
+ignore = []
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
+addopts = "--cov=crs_thoughts --cov-report=term-missing"
 
 [tool.mypy]
 python_version = "3.8"
 strict = true
 warn_return_any = true
-warn_unused_configs = true 
+warn_unused_configs = true
+plugins = ["pydantic.mypy"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38"] 

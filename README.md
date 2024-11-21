@@ -1,6 +1,8 @@
-# QA Thoughts CLI Tools
+# CRS (Can't Remember Shit) CLI Tool
 
-A set of command-line tools for recording questions, answers, and thoughts with automatic timestamping and unique identifiers.
+> "CRS is a horrible disease... and I'm ate up with it." 
+> 
+> This tool helps those of us suffering from CRS by providing a simple way to record and retrieve our thoughts, questions, and answers.
 
 ## Features
 
@@ -22,8 +24,8 @@ A set of command-line tools for recording questions, answers, and thoughts with 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/qa_thoughts.git
-cd qa_thoughts
+git clone https://github.com/draeician/crs.git
+cd crs
 ```
 
 2. Install the package:

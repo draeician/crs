@@ -1,4 +1,4 @@
-"""Main CLI interface for qa_thoughts."""
+"""Main CLI interface for crs_thoughts."""
 
 import argparse
 import os
