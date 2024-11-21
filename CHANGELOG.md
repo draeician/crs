@@ -8,4 +8,7 @@
 - String formatting and escaping utilities
 - CLI interface with command handlers
 - Project configuration and build system setup
-- Requirements file with core and development dependencies 
+- Requirements file with core and development dependencies
+
+### Fixed
+- CLI implementation to handle commands directly instead of using subcommands

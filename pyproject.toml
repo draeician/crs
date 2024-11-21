@@ -26,9 +26,9 @@ dev = [
 ]
 
 [project.scripts]
-question = "qa_thoughts.cli:main"
-answer = "qa_thoughts.cli:main"
-thought = "qa_thoughts.cli:main"
+question = "qa_thoughts.cli:question_main"
+answer = "qa_thoughts.cli:answer_main"
+thought = "qa_thoughts.cli:thought_main"
 
 [tool.ruff]
 line-length = 100
