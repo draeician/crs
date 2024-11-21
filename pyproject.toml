@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qa_thoughts"
+version = "0.1.0"
+description = "CLI tools for recording questions, answers, and thoughts"
+requires-python = ">=3.8"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+dependencies = [
+    "python-dateutil>=2.8.2",
+    "typing-extensions>=4.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.9",
+    "black>=23.12.0",
+    "mypy>=1.8.0",
+    "build>=1.0.3",
+]
+
+[project.scripts]
+question = "qa_thoughts.cli:main"
+answer = "qa_thoughts.cli:main"
+thought = "qa_thoughts.cli:main"
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "B", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+warn_return_any = true
+warn_unused_configs = true 
