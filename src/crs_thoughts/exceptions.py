@@ -14,4 +14,16 @@ class StorageError(CrsThoughtsError):
 
 class ConfigurationError(CrsThoughtsError):
     """Raised when configuration is invalid or missing."""
+    pass
+
+class AIError(CrsThoughtsError):
+    """Raised when AI operations fail."""
+    pass
+
+class SearchError(CrsThoughtsError):
+    """Raised when search operations fail."""
+    pass
+
+class BackupError(CrsThoughtsError):
+    """Raised when backup operations fail."""
     pass 

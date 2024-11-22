@@ -1,3 +1,4 @@
+.coverage
 .cursorrules
 STATUS.md
 BRAINSTORM.md
@@ -6,6 +7,8 @@ project_spec.md
 project_structure.txt
 summary.txt
 venv/
+logs/
+research/
 
 PROPOSAL.md
 ROADMAP.md
